@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cookie&family=Dancing+Script:wght@400;700&family=Lato:ital,wght@0,700;1,900&family=Libre+Bodoni:ital@1&family=Oswald:wght@400;700&family=Playfair+Display:ital,wght@1,900&family=Poppins:ital,wght@1,300;1,500;1,600&family=Roboto+Condensed:wght@700&family=Tapestry&family=The+Nautigal:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50vh - 110px);
+    left: calc(50vw - 110px);
+}
+.coder{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    text-align: center;
+    color: rgb(75, 241, 239);
+    font-size: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.2em ;
+ }
+
+video
+{
+   object-fit: cover;
+   width: 100%;
+   height: 100vh;
+}
+ 
+.coder   
+{
+   opacity: 0;
+   display: inline-block;
+   animation: animate 1s linear forwards;
+}
+
+@keyframes animate
+{
+   0%{
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+
+   }
+   100%
+   {
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0);
+   }
+}
+
+.coder:nth-child(1)
+{
+   animation-delay: 1s;
+}
+.coder:nth-child(2 )
+{
+   animation-delay: 1.5s;
+}
+.coder:nth-child(3)
+{
+   animation-delay: 2s;
+}
+.coder:nth-child(4)
+{
+   animation-delay: 2.5s;
+}
+.coder:nth-child(5)
+{
+   animation-delay: 3s;
+}
+.coder:nth-child(6)
+{
+   animation-delay: 4s;
+}
+
+
+.loader:before{
+    animation-delay: 5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
